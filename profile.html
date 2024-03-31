@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
 
 <body>
     <div class="corner spacing">
-        <button class="buttonstyle">Gerir Perfil</button>
+        <a href="manageprofile.html"><button class="buttonstyle">Gerir Perfil</button></a>
         <a href="index.html"><button class="buttonstyle">Terminar Sessão</button></a>
     </div>
 
@@ -25,26 +24,26 @@
 
     <div class="centertable">
         <table class="table-responsive">
-            <caption>Tarefas</caption>
+            <caption id="caption1">As minhas tarefas</caption>
             <caption id="caption2"><button id="buttonprofile" data-open-modal>Criar Tarefa</button>
-            <div> <data-overlay class="overlay"></div>
+                <div> <data-overlay class="overlay"></div>
 
                 <div data-modal class="modal">
-                    
-                        <button class="close-button" data-close-modal>&times;</button>
-                        <div class="modal-position">
-                            <div class="modal-title">Nova tarefa</div>
-                            <div class="modal-subtitle">Descrição</div>
-                            <input class="modal-description" type="text">
-                            <div class="modal-subtitle">Data</div>
-                            <div><input class="modal-date" type="date"></div>
-                        </div>
-                        <div  class="modal-button">
-                       <a href="profile.html"><button class="buttonstyle">Gravar</button></a> 
+
+                    <button class="close-button" data-close-modal>&times;</button>
+                    <div class="modal-position">
+                        <div class="modal-title">Nova tarefa</div>
+                        <div class="modal-subtitle">Descrição</div>
+                        <input class="modal-description" type="text">
+                        <div class="modal-subtitle">Data</div>
+                        <div><input class="modal-date" type="date"></div>
+                    </div>
+                    <div class="modal-button">
+                        <a href="profile.html"><button class="buttonstyle">Gravar</button></a>
                     </div>
 
                 </div>
-        </caption>
+            </caption>
 
             <thead>
                 <tr>
@@ -58,50 +57,52 @@
             <tbody>
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td><input class="table-checkbox"type="checkbox"></td>
-                    <td></td>
+                    <td><input class="date" type="date"></td>
+                    <td><input class="table-checkbox" type="checkbox"></td>
+                    <td><img class="table-image" src="../imagem/edit.png" alt="Edit"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td><input class="table-checkbox"type="checkbox"></td>
-                    <td></td>
+                    <td><input class="date" type="date"></td>
+                    <td><input class="table-checkbox" type="checkbox"></td>
+                    <td><img class="table-image" src="../imagem/edit.png" alt="Edit"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td><input class="table-checkbox"type="checkbox"></td>
-                    <td></td>
+                    <td><input class="date" type="date"></td>
+                    <td><input class="table-checkbox" type="checkbox"></td>
+                    <td><img class="table-image" src="../imagem/edit.png" alt="Edit"></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td></td>
-                    <td><input class="table-checkbox"type="checkbox"></td>
-                    <td></td>
+                    <td><input class="date" type="date"></td>
+                    <td><input class="table-checkbox" type="checkbox"></td>
+                    <td><img class="table-image" src="../imagem/edit.png" alt="Edit"></td>
                 </tr>
             </tbody>
         </table>
-
     </div>
-    <script>
-const openButton = document.querySelector("[data-open-modal]")
-const closeButton = document.querySelector("[data-close-modal]")
-const modal = document.querySelector("[data-modal]")
-const overlay = document.querySelector(".overlay")
 
-openButton.addEventListener("click", () => {
-    modal.classList.add("open")
-    overlay.classList.add("open")
-})
+    <div data-second-modal class="modal">
+        <button class="close-button" data-close-second-modal>&times;</button>
+        <div class="modal-position">
+            <div class="modal-title">Editar tarefa</div>
+            <div class="modal-subtitle">Descrição</div>
+            <input class="modal-description" type="text">
+            <div class="modal-subtitle">Data</div>
+            <div><input class="modal-date" type="date"></div>
+        </div>
 
-closeButton.addEventListener("click", () => {
-    modal.classList.remove("open")
-    overlay.classList.remove("open")
-})
+        <div class="modal-button2">
+            <div>
+                <a href="profile.html"><button class="buttonstyle">Salvar</button></a>
+                <button class="buttonstyle">Apagar</button>
+            </div>
+        </div>
+    </div>
 
-    </script>
-
+    <div class="second-overlay overlay"></div>
+    <script src="/script.js"></script>
     <footer>
         CopyRight Trabalho 1 Programação WEB Francisco Esteves
     </footer>

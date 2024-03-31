@@ -172,7 +172,7 @@ h1 {
 .box2 {
     position: absolute;
     margin-top: 100px;
-    margin-left: 5%;
+    margin-left: 10%;
     background-color: rgb(255, 255, 255);
     backdrop-filter: blur(5px);
     border-radius: 17px;
@@ -202,10 +202,39 @@ h1 {
     height: 80%;
 }
 
+table {
+    position: relative;
+    width: 80%;
+
+}
+
+tr {
+    height: 50px;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 70%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 5%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 5%;
+}
+
 table,
 th,
 td {
-    
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
@@ -227,6 +256,12 @@ table caption {
     font-size: 40px;
 }
 
+#caption1 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 260px;
+}
+
 #caption2 {
     caption-side: top;
     text-align: right;
@@ -235,7 +270,7 @@ table caption {
 
 #buttonprofile {
     background-color: rgb(202, 200, 200);
-    width: 170px;
+    width: 150px;
     height: 50px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
@@ -250,6 +285,19 @@ table caption {
     color: white;
 }
 
+.table-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.table-image {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
 /*Modal*/
 .overlay {
     display: none;
@@ -259,14 +307,15 @@ table caption {
     z-index: 9;
 }
 
-.modal.open, .overlay.open {
+.modal.open,
+.overlay.open {
     display: block;
 }
 
 .modal {
     display: none;
     position: fixed;
-    width: 400px;
+    width: 450px;
     height: 400px;
     text-align: left;
     top: 50%;
@@ -278,25 +327,26 @@ table caption {
     z-index: 10;
 }
 
-.modal-title{
+.modal-title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.modal-subtitle{
+.modal-subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 
 }
-.modal-description{
+
+.modal-description {
     width: 315px;
     height: 80px;
     margin-bottom: 20px;
 }
 
-.modal-date{
+.modal-date {
     padding: 5px;
     cursor: pointer;
 }
@@ -314,17 +364,41 @@ table caption {
 
 
 
-.modal-button{
-text-align: center;
-margin-top: 20px;
+.modal-button {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
 
 }
 
-.modal-position{
+.modal-position {
     display: flex;
     margin-top: 10%;
     margin-left: 10%;
     flex-direction: column;
     text-align: left;
     position: relative;
+}
+
+.modal-button2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.date {
+    background-color: rgba(177, 177, 177, 0.651);
+    border: 2px solid rgba(92, 92, 92, 0.644);
+    height: 25px;
+    cursor: pointer;
+}
+
+/*Manage Profile*/
+#image5 {
+    width: 240px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
