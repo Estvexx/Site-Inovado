@@ -73,8 +73,12 @@ display: block;
     color: red;
     display: none;
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 15px;
             
+}
+
+.spaceemail{
+    margin-top: 3%;
 }
 
 /*Index Html*/
