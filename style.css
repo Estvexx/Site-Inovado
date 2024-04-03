@@ -64,6 +64,19 @@ h1 {
     padding-right: 30px;
 }
 
+
+#email{
+display: block;
+}
+
+.error-email{
+    color: red;
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+            
+}
+
 /*Index Html*/
 #image1 {
     width: 50%;

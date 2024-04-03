@@ -34,3 +34,19 @@
         secondOverlay.classList.remove("open");
     });
 });
+
+var emailInput = document.getElementById('email');
+var emailError = document.getElementById('email-error');
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+emailInput.addEventListener('input', function () {
+    var email = emailInput.value;
+
+    if (email === '') {
+        emailError.style.display = 'none';
+    } else if (!emailRegex.test(email)) {
+        emailError.style.display = 'block';
+    } else {
+        emailError.style.display = 'none';
+    }
+});
