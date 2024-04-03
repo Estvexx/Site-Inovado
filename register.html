@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -16,16 +17,28 @@
                 <div class="center">
                     <img id="image3" src="../imagem/registered.png" alt="Pessoa">
                     <br>
+                    <div class="input-container">
                     <input type="text" class="inputs" placeholder="* Name">
+                    <span class="icon"><i class="fas fa-user"></i></span>
+                </div>
                     <br>
+                    <div class="input-container">
                     <input type="text" class="inputs" placeholder="* Email">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                </div>
                     <br>
+                    <div class="input-container">
                     <input type="password" class="inputs" placeholder="* Password">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                    </div>
                     <br>
+                    <div class="input-container">
                     <input type="password" class="inputs" placeholder="* Re-type Password">
+                    <span class="icon"><i class="fas fa-lock"></i></span>
+                </div>
                     <div class="checkboxcenter">
                         <input type="checkbox" id="acept" name="acept" checked />
-                        <label for="acept">I agree to the Terms of Use and Privacy Policy</label>
+                        <label for="acept" id="text-size">I agree to these Terms & Conditions</label>
                     </div>
                 </div>
 

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
     const openButton = document.querySelector("[data-open-modal]")
     const closeButton = document.querySelector("[data-close-modal]")
     const modal = document.querySelector("[data-modal]")
@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     editButtons.forEach(button => {
         button.addEventListener("click", () => {
-            // Lógica para abrir a segunda modal quando a imagem de edição é clicada
             const secondModal = document.querySelector("[data-second-modal]");
             const secondOverlay = document.querySelector(".second-overlay");
 

@@ -48,6 +48,22 @@ h1 {
     color: white;
 }
 
+.input-container{
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.inputs{
+    padding-right: 30px;
+}
+
 /*Index Html*/
 #image1 {
     width: 50%;
@@ -128,7 +144,6 @@ h1 {
 .checkboxcenter {
     display: flex;
     align-items: center;
-    margin-left: 105px;
 }
 
 #forgotpassword {
@@ -139,6 +154,10 @@ h1 {
     cursor: pointer;
     justify-content: center;
     margin-top: 5px;
+}
+
+#text-size{
+    font-size: 15px;
 }
 
 #acept {
